@@ -38,7 +38,7 @@ https://fontawesome.com/license/free
 
 ## Attribution
 
-* "Trafalgar" UI design based on creation by Figma Community contributor heroninja — https://www.figma.com/community/file/892358789568947362
+* "Trafalgar" design created by Figma Community contributor heroninja — https://www.figma.com/community/file/892358789568947362
 * Font Awesome icons © Fonticons, Inc. — used under CC BY 4.0
 * Unsplash images © their respective creators — used under the Unsplash License
 
