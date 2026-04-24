@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About - MusicIdea</title>
+        <link rel="icon" type="image/x-icon" href="img/perma/site-fav.svg">
+        <link href="style.css" rel="stylesheet">
+        <script src="https://accounts.google.com/gsi/client" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+        <script type="text/JavaScript" src="js/customScripts.js" defer></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Didact+Gothic&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body id="body">
+        <a href="../index.html" class="back-to-projects-link">
+            <div class="link-decoration">
+                <img src="../img/icon.png" alt="Fav icon" />
+            </div>
+            <div class="link-text">
+                Back to projects
+            </div>
+        </a>
+        <header class="common-header">
+            <div class="header-wrapper">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="img/perma/logo.svg" alt="Logo">
+                        </a>
+                    </div>
+                <div class="header-inside">
+                    <div class="flex-void"></div>
+                    <div class="header-categories color-bg-w1">
+                        <div class="category-item font-text1">
+                            <a class="color-b" href="about-me.html">About</a>
+                            <div class="decoration color-bg-ln2"></div>
+                        </div>
+                        <div class="category-item font-text1">
+                            <a class="color-b" href="#">Video Lessons</a>
+                            <div class="decoration color-bg-ln2"></div>
+                        </div>
+                        <div class="category-item font-text1">
+                            <a class="color-b" href="#">Contact</a>
+                            <div class="decoration color-bg-ln2"></div>
+                        </div>
+                        <div class="category-item font-text1">
+                            <a class="color-b" href="store.html">Store</a>
+                            <div class="decoration color-bg-ln2"></div>
+                        </div>
+                    </div>
+                    <div class="navigation-group">
+                        <div id="quick-languages-id" class="quick-languages-wrapper" data-admin-language-default="false">
+                            <div class="quick-languages-button restrict-select c-interactable">
+                                <img class="restrict-interact" src="img/perma/globe-symbol.svg" alt="Globe symbol">
+                                <div class="current-language font-placeholder1 color-w5">EN</div>
+                                <div class="dropdown-decoration">
+                                    <img class="restrict-interact" src="img/perma/dropdown-symbol.svg" alt="Dropdown symbol">
+                                </div>
+                            </div>
+                            <div class="quick-languages-items-wrapper">
+                                <div class="quick-languages-items">
+                                    <button class="quick-languages-item font-placeholder1 color-b restrict-text-overflow c-active" title="English">
+                                        English
+                                    </button>
+                                    <button class="quick-languages-item font-placeholder1 color-b restrict-text-overflow" title="Greek">
+                                        Greek
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user-login-wrapper">
+                            <div id="user-login-decorative-id" class="user-login user-login-decorative">
+                                <img class="login-icon restrict-interact" src="img/perma/user.svg" alt="User Login">
+                            </div>
+                            <div id="user-login-id" class="user-login">
+                                <div class="login-bubble">
+                                    <div class="decorations">
+                                        <div class="decoration decoration-top">
+                                            <img class="restrict-interact" src="img/perma/notes-top-2.png" alt="Decoration notes">
+                                        </div>
+                                        <div class="decoration decoration-bottom">
+                                            <img class="restrict-interact" src="img/perma/notes-bottom-2.png" alt="Decoration notes">
+                                        </div>
+                                        <div class="decoration decoration-flower">
+                                            <img class="restrict-interact" src="img/perma/login-flower.png" alt="Decoration flower">
+                                        </div>
+                                    </div>
+                                    <div class="login-text font-text2 color-b">Connect</div>
+                                    <div class="login-form">
+                                        <label for="uname" hidden>Email</label>
+                                        <input class="login-field" type="text" id="uname" name="uname" placeholder="Email or username" required>
+                                        <label for="pword" hidden>Password</label>
+                                        <input class="login-field" type="password" id="pword" name="pword" placeholder="Password" required>
+                                        <input class="login-submit font-cta1 color-b" type="submit" value="Log in">
+                                    </div>
+                                    <div class="divider-line">
+                                        <span class="font-placeholder1 font-size24 color-b1">OR</span>
+                                    </div>
+                                    <div class="existing-account-details c-centered">
+                                        <div class="choices-box">
+                                            <a href="#" class="choice-item choice-item-handnote restrict-select">
+                                                <img class="restrict-interact" src="../img/handnote-logo.svg" alt="Handnote logo">
+                                                Continue with Handnote
+                                            </a>
+                                            <a href="#" class="choice-item choice-item-plintoo restrict-select">
+                                                <img class="restrict-interact" src="../img/plintoo-logo.svg" alt="Plintoo logo">
+                                                Continue with Plintoo
+                                            </a>
+                                            <a href="#" class="choice-item choice-item-kisfland restrict-select">
+                                                <img class="restrict-interact" src="../img/kisfland-logo.svg" alt="Kisfland logo">
+                                                Continue with Kisfland
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="forgot-password blue-button-small c-centered font-cta2 color-w6">
+                                        Forgot your password?
+                                    </a>
+                                    <a href="register.html" class="register blue-button-small c-centered font-cta2 color-w6">
+                                        <div class="">
+                                            No account? Register
+                                        </div>
+                                        <div>
+                                            <img class="restrict-interact" src="img/perma/guitar.svg" alt="Decorative Instrument">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mobile-menu-wrapper">
+                            <div id="mobile-menu-button-id" class="mobile-menu-button">
+                                <img class="restrict-interact" src="img/perma/burger-menu-symbol.svg" alt="Burger menu">
+                            </div>
+                            <div class="mobile-menu-popout">
+                                <div class="header-categories color-bg-w1">
+                                    <div class="category-item font-text1">
+                                        <a class="color-b" href="about-me.html">About</a>
+                                    </div>
+                                    <div class="category-item font-text1">
+                                        <a class="color-b" href="#">Video Lessons</a>
+                                    </div>
+                                    <div class="category-item font-text1">
+                                        <a class="color-b" href="#">Contact</a>
+                                    </div>
+                                    <div class="category-item font-text1">
+                                        <a class="color-b" href="store.html">Store</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-decoration restrict-interact">
+                    <img src="img/perma/header-guitar.png" alt="Image of guitar">
+                </div>
+            </div>
+        </header>
+
+        <main class="about-me">
+            <div class="main-wrapper">
+
+                <div class="breadcrumbs font-text4 ">Home > <span class="color-be">About</span></div>
+
+                <div class="main-section first-section color-bg-ln1">
+                    <div class="main-section-inside">
+                        <div class="title font-header2 color-b2">
+                                ABOUT ME
+                            <div class="decoration color-bg-ln2"></div>
+                        </div>
+                        
+                        <div class="top">
+                            <div class="left">
+                                <div class="decoration-group">
+                                    <div class="top-decoration">
+                                        <img class="notes restrict-interact" src="img/perma/notes-top-2.png" alt="Decorative notes">
+                                    </div>
+                                    <img class="notes restrict-interact" src="img/temp/teacher.png" alt="Teacher">
+                                    <div class="bottom-decoration">
+                                        <img class="notes restrict-interact" src="img/perma/notes-bottom-2.png" alt="Decorative notes">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="right">
+                                <div class="description font-text2 color-g2">
+                                    Quisque sagittis non risus id tempor. Mauris mauris odio, eleifend et est ac, pretiumpellentesq ue augue. Donec vel placerat ligula. Nullam sit amet mi hendrerit, tempus velit eget, ultrices qu am. Proin tincidunt non tellus eu gravida. Praesent iaculis sagittis iaculis. Etiam id hendrerit mi.<br><br>Sed et lorem congue, condimentum mauris vel, cursus lectus. Morbi lobortis porttitor efficitur. Nulla erat nulla, efficitur id lacinia et, semper vel ipsum. Duis eu lacus vel orci varius suscipit. Proin porttitor rutrum mauris, et faucibus elit tempor in. In sit amet commodo ante, eu faucibus orci. Mauris eleifend ex velit, ac facilisis nisi gravida nec. Phasellus eu pretium purus, sit amet rutrum magna. Morbi malesuada id erat at ullamcorper. Vivamus lacinia gravida dolor, a pellentesque metus vestibulum nec. Suspendisse sit amet nibh et erat varius commodo nec eget massa. Etiam blandit, est a cursus mattis, magna ipsum accumsan libero, nec accumsan felis tortor vel ipsum.<br><br>Mauris vehicula condimentum ante, et ultrices ante tempus fringilla. Maecenas volutpat fermentum ex, eu consequat augue mollis lobortis. Duis dignissim purus ut tristique malesuada. Sed vehicula, dolor ut maximus convallis, risus tortor sollicitudin mi, et semper libero lorem in magna. Pellentesque varius congue posuere. Suspendisse eu consectetur sem, ac placerat dui. Etiam ac purus consequat, ullamcorper nibh ac, auctor ante. Curabitur ultricies purus in turpis consequat, sit amet condimentum orci bibendum. Vivamus congue risus diam. Morbi nec dolor at lorem accumsan ullamcorper nec finibus augue. Aenean maximus posuere maximus. Sed tincidunt ex eget malesuada auctor. Nunc venenatis ultrices maximus.<br><br>Nullam ut enim porta, hendrerit lacus nec, accumsan est. Quisque nec pulvinar augue, non laoreet nibh. Donec mauris sem, fringilla consequat libero vel, sodales elementum nunc. Ut sodales, nulla in commodo fermentum, mi nulla rhoncus nunc, quis commodo mi nibh vitae nulla. Nunc sed efficitur nibh, et condimentum sem. Aliquam tellus ante, eleifend id dui a, suscipit viverra libero. Cras at est velit. Aliquam accumsan nulla dui, vulputate maximus lacus finibus et. Nam gravida lacinia sem, non dictum orci placerat quis. Mauris suscipit augue et erat interdum, vitae rhoncus metus volutpat. Aenean ullamcorper, mauris a sollicitudin efficitur, leo purus volutpat elit, a fermentum lacus libero at est.<br><br>In nec lectus nec eros auctor ultrices. Nam facilisis lacinia quam et dignissim. Morbi auctor, velit eu porta mattis, tellus risus condimentum nulla, non auctor eros ex nec felis. Nullam malesuada, ligula quis facilisis dignissim, turpis arcu porttitor magna, sed tristique est metus at magna. Aliquam venenatis, felis consequat ullamcorper iaculis, magna tortor rutrum nunc, tristique varius risus tortor quis neque. Duis id semper sem. Aliquam cursus justo sit amet lorem vulputate faucibus at et diam.<br><br>Proin in commodo erat. Quisque consectetur vel leo quis sagittis. Integer urna tortor, facilisis cursus cursus et, congue vitae nisi.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-divider restrict-interact">
+                            <img src="img/perma/page-divider-about-me.png" alt="Decorative divider">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-inside">
+                <div class="footer-background restrict-interact">
+                    <img src="img/perma/footer-bg.png" alt="Footer image">
+                </div>
+                <div class="footer-socials">
+                    <div class="socials-hn">
+                        <a href="#">
+                            <img src="../img/handnote-logo.svg" alt="Handnote logo">
+                        </a>
+                    </div>
+                    <div class="socials-kf">
+                        <a href="#">
+                            <img src="../img/kisfland-logo.svg" alt="Kisfland logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="top">
+                    <div class="left">
+                        <div class="footer-category-item color-w1 font-text5">
+                            <a href="about-me.html">
+                                About
+                                <div class="decoration-hover"></div>
+                            </a>
+                        </div>
+                        <div class="footer-category-item color-w1 font-text5">
+                            <a href="#">
+                                Video Lessons
+                                <div class="decoration-hover"></div>
+                            </a>
+                        </div>
+                        <div class="footer-category-item color-w1 font-text5">
+                            <a href="#">
+                                Contact
+                                <div class="decoration-hover"></div>
+                            </a>
+                        </div>
+                        <div class="footer-category-item color-w1 font-text5">
+                            <a href="store.html">
+                                Store
+                                <div class="decoration-hover"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="footer-category-item color-w1 font-text5">
+                            <a href="#">
+                                Privacy Policy
+                                <div class="decoration-hover"></div>
+                            </a>
+                        </div>
+                        <div class="footer-category-item color-w1 font-text5">
+                            <a href="#">
+                                Cookie Policy
+                                <div class="decoration-hover"></div>
+                            </a>
+                        </div>
+                        <div class="footer-category-item color-w1 font-text5">
+                            <a href="#">
+                                Transaction Security
+                                <div class="decoration-hover"></div>
+                            </a>
+                        </div>
+                        <div class="footer-category-item color-w1 font-text5">
+                            <a href="#">
+                                Terms of Service
+                                <div class="decoration-hover"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="communications-title color-w1 font-text5">Get in touch with the Teacher:</div>
+                        <div class="communications-form">
+                            <label for="email" hidden></label>
+                            <input class="communications-field email-input color-w3 font-placeholder1" type="email" id="email" name="email" placeholder="your@email.com">
+                            <label for="description" hidden></label>
+                            <input class="communications-field description-input color-w3 font-placeholder1" type="text" id="description" name="description" placeholder="Describe your request...">
+                            <div class="custom-input-group">
+                                <div class="input-captcha">
+                                    <label class="custom-checkbox">
+                                        <input class="communications-captcha" type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <div class="captcha-rules color-w3">
+                                        I accept the
+                                        <span>
+                                            <a href="#">Terms of Service</a> 
+                                        </span>
+                                    </div>
+                                </div>
+                                <input class="communications-submit font-cta2 color-w1" type="submit" value="Submit">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-mini">
+                <div class="trademark color-w3 font-text6">© 2026 Musicidea</div>
+                <div class="note color-w3 font-text6">Designed & Developed by Manos<span><img class="restrict-interact" src="../img/smile.svg" alt="Smile :)"></span></div>
+            </div>
+        </footer>
+
+    </body>
+</html>
