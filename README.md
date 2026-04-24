@@ -24,7 +24,7 @@ This repository includes assets from external sources that are not covered by th
 
 ### Images
 
-Images sourced from Unsplash are used under the Unsplash License.
+Images sourced from Unsplash are used under the Unsplash License.  
 https://unsplash.com/license
 
 ---
