@@ -1,5 +1,6 @@
 :root {
     --color-b1: #111214;
+    --color-b2: #242424;
     --color-w1: #e8e8e8;
     --color-w2: #4a4949;
     --color-p1: #2D2749;
@@ -10,6 +11,8 @@
     --color-be4: #2a5a9e;
     --color-gr1: #8AC2B8;
     --color-gr2: #46615c;
+    --color-r1: #7D3939;
+    --color-r2: #AB5353;
     --filter-color-be2: invert(63%) sepia(31%) saturate(7488%) hue-rotate(194deg) brightness(97%) contrast(100%);
 }
 
@@ -66,6 +69,11 @@ main {
     outline-offset: -4px;
 }
 
+main[data-current-project-id=zis] .slider-items .item:hover,
+main[data-current-project-id=zis] .slider-items .item.c-hover-mirrored {
+    outline: 4px solid var(--color-b2);
+}
+
 main[data-current-project-id=ant] .slider-items .item:hover,
 main[data-current-project-id=ant] .slider-items .item.c-hover-mirrored {
     outline: 4px solid var(--color-gr1);
@@ -101,6 +109,15 @@ main[data-current-project-id=tra] .slider-items .item.c-hover-mirrored {
 
 main.item-animating .slider-items ~ .slider-arrows .slider-arrow {
     pointer-events: none;
+}
+
+main[data-current-project-id=zis] .slider-arrows .slider-arrow {
+    background-color: var(--color-b2);
+    border-color: var(--color-r1);
+}
+
+main[data-current-project-id=zis] .slider-arrows .slider-arrow:hover {
+    background-color: var(--color-r1);
 }
 
 main[data-current-project-id=ant] .slider-arrows .slider-arrow {
@@ -144,6 +161,14 @@ main[data-current-project-id=tra] .slider-arrows .slider-arrow:hover {
     inset: 0;
     margin: auto;
     transition: 0.2s;
+}
+
+main[data-current-project-id=zis] .slider-arrows .slider-arrow::after {
+    background-color: var(--color-r2);
+}
+
+main[data-current-project-id=zis] .slider-arrows .slider-arrow:hover::after {
+    background-color: var(--color-b2);
 }
 
 main[data-current-project-id=ant] .slider-arrows .slider-arrow::after {
@@ -210,6 +235,13 @@ main[data-current-project-id=tra] .slider-arrows .slider-arrow:hover::after {
     text-underline-offset: 5px;
 }
 
+main[data-current-project-id=zis] .slider-items-title:hover,
+main[data-current-project-id=zis] .slider-items-title.c-hover-mirrored,
+.next-slider-item-ghost[data-ghost-project-id=zis]:hover ~ .ghost-item-title,
+.next-slider-item-ghost[data-ghost-project-id=zis] ~ .ghost-item-title:hover {
+    color: var(--color-r2);
+}
+
 main[data-current-project-id=ant] .slider-items-title:hover,
 main[data-current-project-id=ant] .slider-items-title.c-hover-mirrored,
 .next-slider-item-ghost[data-ghost-project-id=ant]:hover ~ .ghost-item-title,
@@ -243,6 +275,10 @@ main[data-current-project-id=tra] .slider-items-title.c-hover-mirrored,
 
 .slider-decoration svg path.c-animate {
     transform: translateY(-3px);
+}
+
+main[data-current-project-id=zis] .slider-decoration svg path.c-animate {
+    fill: var(--color-r2);
 }
 
 main[data-current-project-id=ant] .slider-decoration svg path.c-animate {
