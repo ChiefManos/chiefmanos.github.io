@@ -301,8 +301,8 @@ img {
 
 .back-to-projects-link .link-text {
     font-family: 'Bhavuka';
-    color: #000000;
-    font-size: 12px;
+    color: var(--color-b1);
+    font-size: 18px;
 }
 
 main .section-landing {
