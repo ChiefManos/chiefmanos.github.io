@@ -438,7 +438,7 @@
                     <form action="javascript:void(0);">
                         <div class="inputs-group group-top">
                             <div class="ifta-label-group label-group-first">
-                                <input id="contact-full-name" type="text" class="font-text2 color-p1" name="account-name" placeholder="e.g. Jane Doe" required autocomplete="off">
+                                <input id="contact-full-name" type="text" class="font-text2 color-p1" name="contact-name" placeholder="e.g. Jane Doe" required autocomplete="off">
                                 <label for="contact-full-name" class="ifta-label restrict-select font-text2 color-p1">Full name</label>
                                 <div class="decoration-item decoration-message font-text1" aria-hidden="true">
                                     form_input_1
@@ -448,14 +448,14 @@
                                 <img class="restrict-interact" src="img/static/component-5.svg" alt="Decoration component">
                             </div>
                             <div class="ifta-label-group label-group-second">
-                                <input id="contact-email" type="email" class="font-text2 color-p1" name="account-email" pattern="^[^@]+@[^@]+\.[^@]+$" placeholder="e.g. janedoe@website.com" required autocomplete="off">
+                                <input id="contact-email" type="email" class="font-text2 color-p1" name="contact-email" pattern="^[^@]+@[^@]+\.[^@]+$" placeholder="e.g. janedoe@website.com" required autocomplete="off">
                                 <label for="contact-email" class="ifta-label restrict-select font-text2 color-p1">Email</label>
                             </div>
                             <div class="decoration-item decoration-component">
                                 <img class="restrict-interact" src="img/static/component-5.svg" alt="Decoration component">
                             </div>
                             <div class="ifta-label-group label-group-third">
-                                <select id="contact-reason" class="font-text2 color-p1" name="account-email" required autocomplete="off">
+                                <select id="contact-reason" class="font-text2 color-p1" name="contact-reason" required autocomplete="off">
                                     <option value="0" selected>choose one</option>
                                     <option value="1">Platea</option>
                                     <option value="2">Morbi</option>
@@ -471,7 +471,7 @@
                         </div>
                         <div class="inputs-group group-bottom">
                             <div class="ifta-label-group">
-                                <textarea id="contact-description" type="text" class="font-text2 color-p1" name="account-name" placeholder="Tell us what's on your mind!" required autocomplete="off"></textarea>
+                                <textarea id="contact-description" type="text" class="font-text2 color-p1" name="contact-description" placeholder="Tell us what's on your mind!" required autocomplete="off"></textarea>
                                 <label for="contact-description" class="ifta-label restrict-select font-text2 color-p1">Inquiry description</label>
                                 <div class="decoration-item decoration-message font-text1" aria-hidden="true">
                                     form_input_4
@@ -479,7 +479,7 @@
                             </div>
                             <div class="input-captcha">
                                 <label class="custom-checkbox">
-                                    <input class="communications-captcha" type="checkbox" autocomplete="off">
+                                    <input class="communications-captcha" type="checkbox" autocomplete="off" required>
                                     <span class="checkmark"></span>
                                 </label>
                                 <div class="captcha-rules color-w3 font-text2">
