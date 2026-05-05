@@ -104,6 +104,7 @@ main[data-current-project-id=tra] .slider-items .item.c-hover-mirrored {
     bottom: 45px;
     margin: auto 0;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    pointer-events: all;
     transition: 0.2s;
 }
 
