@@ -444,6 +444,7 @@ main:not(.item-animating) .next-slider-item-ghost-wrapper:hover .ghost-item-titl
         left: 0;
         right: 0;
         margin: 0 auto;
+        pointer-events: none;
     }
 
     .slider-arrows .slider-arrow {
