@@ -1166,8 +1166,12 @@ header .header-wrapper .header-inside .user-login .login-bubble .divider-line sp
 }
 
 header .header-wrapper .header-inside .mobile-menu-wrapper {
-    z-index: 2;
+    z-index: 1;
     display: none;
+}
+
+html.mobile-menu-visible header .header-wrapper .header-inside .mobile-menu-wrapper {
+	z-index: 2;
 }
 
 header .header-wrapper .header-inside .mobile-menu-wrapper .mobile-menu-button {
