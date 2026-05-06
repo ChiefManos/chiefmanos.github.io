@@ -1166,7 +1166,7 @@ header .header-wrapper .header-inside .user-login .login-bubble .divider-line sp
 }
 
 header .header-wrapper .header-inside .mobile-menu-wrapper {
-    z-index: 1;
+    z-index: 2;
     display: none;
 }
 
