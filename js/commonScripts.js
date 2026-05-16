@@ -149,3 +149,105 @@ function addManagedEventListener(element, eventType, callback) {
     }
     
 }
+
+function handleSpinner(container) {
+
+  const numberInput = container.querySelector(".c-spinner");
+  const decreaseButton = container.querySelector(".c-spinner-decrease");
+  const increaseButton = container.querySelector(".c-spinner-increase");
+  const inputMode = numberInput.getAttribute("inputmode");
+  function handleInputCallback(event) {
+
+    event.preventDefault(); // The default behavior to prevent is "enter" key submitting the form
+
+    this.value = inputMode === "decimal" 
+      ? Number(this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0')).toFixed(2)
+      : this.value.replace(/[^0-9]/g, '');
+
+    if (inputMode === "decimal" && isNaN(this.value)) {
+      this.value = Number(0).toFixed(2);
+    }
+
+  }
+  function handleKeydownCallback(event) {
+
+    if (event.key === "Enter") {
+      event.preventDefault(); // The default behavior to prevent is "enter" key submitting the form
+    }
+
+    if (event.key === "ArrowDown") {
+      handleDecreaseNumber(numberInput);
+    } else if (event.key === "ArrowUp") {
+      handleIncreaseNumber(numberInput);
+    }
+
+  }
+  function handleClickIncreaseCallback() {
+    handleIncreaseNumber(numberInput);
+  }
+  function handleClickDecreaseCallback() {
+    handleDecreaseNumber(numberInput);
+  }
+
+  // Up/down keys
+  addManagedEventListener(numberInput, 'input', handleInputCallback);
+  addManagedEventListener(numberInput, 'keydown', handleKeydownCallback);
+
+  // Spinner buttons
+  [decreaseButton, increaseButton].forEach(button => {
+    addManagedEventListener(button, 'click', cPreventDefault);
+  });
+
+  addManagedEventListener(decreaseButton, 'click', handleClickDecreaseCallback);
+  addManagedEventListener(increaseButton, 'click', handleClickIncreaseCallback);
+
+}
+
+function handleIncreaseNumber(numberInput) {
+
+  if (numberInput.value === "") {
+    numberInput.value = parseInt(numberInput.getAttribute("data-min") ?? "0") + 1;
+    return;
+  }
+
+  const currentNumber = parseInt(numberInput.value);
+  numberInput.value = isNaN(currentNumber) ? 1 : Math.ceil(currentNumber + 0.01);
+
+  const inputMode = numberInput.getAttribute("inputmode");
+  if (inputMode === "decimal") {
+    numberInput.value = Number(numberInput.value).toFixed(2);
+  }
+
+  blurThenFocus(numberInput);
+
+}
+
+function handleDecreaseNumber(numberInput) {
+
+  if (numberInput.value === "") {
+    numberInput.value = numberInput.getAttribute("data-min") ?? 0;
+    return;
+  }
+
+  const currentNumber = parseInt(numberInput.value);
+  numberInput.value = currentNumber > 0 ? Math.floor(currentNumber - 0.01) : 0;
+
+  const inputMode = numberInput.getAttribute("inputmode");
+  if (inputMode === "decimal") {
+    numberInput.value = Number(numberInput.value).toFixed(2);
+  }
+
+  blurThenFocus(numberInput);
+
+}
+
+function cPreventDefault(event) {
+  event.preventDefault();
+}
+
+function blurThenFocus(input) {
+  input.click();
+  input.focus();
+  input.blur();
+  input.focus();
+}
