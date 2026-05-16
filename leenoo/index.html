@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Boldonse&family=Buda:wght@300&display=swap" rel="stylesheet">
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous" defer></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
+        <script type="text/javascript" src="/js/commonScripts.js"defer></script>
+        <script type="text/javascript" src="js/customScripts.js"defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous" defer></script>
+
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
+        <link rel="stylesheet" href="style.css" />
+
+        <link rel="icon" href="img/static/icon.svg" />
+        <title>Leenoo - Handcrafted Jewelry</title>
+    </head>
+
+    <body class="frontpage">
+
+        <a href="../index.html" class="back-to-projects-link" style="display: none;">
+            <div class="link-decoration">
+                <img class="restrict-interact" src="../img/icon.png" alt="Fav icon" />
+            </div>
+            <div class="link-text">
+                Back to projects
+            </div>
+        </a>
+
+        <header>
+
+            <div class="header-mini font-text1 font-size16 color-b1">
+                Worldwide orders. Free delivery for orders over $100 in Australia
+            </div>
+
+            <div class="header-items">
+                <div class="items-group group-left">
+                    <a class="logo" href="index.html">
+                        <img class="restrict-interact" src="img/static/logo.svg" alt="Logo">
+                    </a>
+                    <div class="category-items font-header1 color-b2">
+                        <a href="#section-about-id" class="category-item item-about">
+                            About me
+                        </a>
+                        <a href="#section-custom-id" class="category-item item-custom">
+                            Custom
+                        </a>
+                        <a href="#section-store-id" class="category-item item-store">
+                            Store
+                        </a>
+                        <a href="#section-gallery-id" class="category-item item-gallery">
+                            Gallery
+                        </a>
+                        <a href="#section-contact-id" class="category-item item-contact">
+                            Contact
+                        </a>
+                    </div>
+                    <a id="advert-id" class="advert" href="item-jellyfish-necklace.html">
+                        <div class="advert-body">
+                            <div class="advert-preview" style="background-image: url(img/temp/item-jellyfish.png)"></div>
+                            <div class="advert-title font-text1 font-size24">
+                                Jellyfish necklace
+                            </div>
+                        </div>
+                        <div class="advert-actions font-cta1">
+                            <div class="advert-close" tabindex="0">
+                                <div class="action-image">
+                                    <img class="restrict-interact" src="img/static/close.svg" alt="Close icon">
+                                </div>
+                                <div class="action-text font-size16 color-w1">
+                                    Best seller
+                                </div>
+                            </div>
+                            <div class="advert-more color-b1">
+                                See <span><img class="restrict-interact" src="img/static/arrow-small.svg" alt="Arrow"></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="items-group group-right">
+                    <div class="user-menu group-item">
+
+                        <div class="item-button" tabindex="0">
+                            <img class="restrict-interact" src="img/static/user.svg" alt="User icon">
+                        </div>
+
+                        <div class="item-popout">
+                            <div class="decorations">
+                                <div class="decoration decoration-top">
+                                    <img class="restrict-interact" src="img/static/vine-1.png" alt="Decoration vines">
+                                </div>
+                                <div class="decoration decoration-bottom">
+                                    <img class="restrict-interact" src="img/static/vine-2.png" alt="Decoration vines">
+                                </div>
+                                <div class="decoration decoration-flower">
+                                    <img class="restrict-interact" src="img/static/login-flower.png" alt="Decoration flower">
+                                </div>
+                            </div>
+                            <div class="login-text font-text2 color-b">Connect</div>
+                            <div class="login-form">
+                                <label for="uname" hidden>Email</label>
+                                <input class="login-field" type="text" id="uname" name="uname" placeholder="Email or username" required>
+                                <label for="pword" hidden>Password</label>
+                                <input class="login-field" type="password" id="pword" name="pword" placeholder="Password" required>
+                                <input class="login-submit font-cta1 color-b" type="submit" value="Log in">
+                            </div>
+                            <div class="divider-line">
+                                <span class="font-header1 font-size16 color-b1">or</span>
+                            </div>
+                            <div class="existing-account-details c-centered">
+                                <div class="choices-box">
+                                    <a href="#" class="choice-item choice-item-handnote restrict-select font-cta1 font-size12">
+                                        <img class="restrict-interact" src="../img/handnote-logo.svg" alt="Handnote logo">
+                                        Continue with Handnote
+                                    </a>
+                                    <a href="#" class="choice-item choice-item-plintoo restrict-select font-cta1 font-size12">
+                                        <img class="restrict-interact" src="../img/plintoo-logo.svg" alt="Plintoo logo">
+                                        Continue with Plintoo
+                                    </a>
+                                    <a href="#" class="choice-item choice-item-kisfland restrict-select font-cta1 font-size12">
+                                        <img class="restrict-interact" src="../img/kisfland-logo.svg" alt="Kisfland logo">
+                                        Continue with Kisfland
+                                    </a>
+                                </div>
+                            </div>
+                            <a href="#" class="forgot-password blue-button-small c-centered font-cta1 font-size14 color-b2">
+                                Forgot your password?
+                            </a>
+                            <a href="#" class="register blue-button-small c-centered font-cta1 font-size14 color-b2">
+                                <div class="register-text">
+                                    No account? Register
+                                </div>
+                                <div class="register-decoration">
+                                    <img class="restrict-interact" src="img/static/frog.svg" alt="Decoration frog">
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="user-bag group-item font-text1">
+
+                        <div class="item-button" tabindex="0">
+                            <img class="restrict-interact" src="img/static/bag.svg" alt="Bag icon">
+                        </div>
+
+                        <div class="item-popout">
+                            <div class="popout-header color-b1">
+                                Your bag
+                            </div>
+                            <div class="popout-body color-b2">
+                                <a href="item-eye-necklace.html" class="body-item" data-item-id="1">
+                                    <div class="item-image item-attribute-group">
+                                        <img class="restrict-interact" src="img/temp/item-eye-necklace.png" alt="Eye necklace">
+                                    </div>
+                                    <div class="item-details item-attribute-group font-size16">
+                                        <div class="detail-title group-item restrict-text-overflow">
+                                            Eye necklace
+                                        </div>
+                                        <div class="detail-value group-item">
+                                            $<span class="value-raw">34.99</span>
+                                        </div>
+                                        <div class="detail-quantity">
+                                            Quantity: <span class="value-raw">1</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-action item-attribute-group">
+                                        <img class="restrict-interact" src="img/static/close.svg" alt="Delete icon">
+                                    </div>
+                                </a>
+                                <a href="#" class="body-item body-item-prototype">
+                                    <div class="item-image item-attribute-group">
+                                        <img class="restrict-interact" src="" alt="">
+                                    </div>
+                                    <div class="item-details item-attribute-group font-size16">
+                                        <div class="detail-title group-item restrict-text-overflow"></div>
+                                        <div class="detail-value group-item">
+                                            $<span class="value-raw"></span>
+                                        </div>
+                                        <div class="detail-quantity">
+                                            Quantity: <span class="value-raw"></span>
+                                        </div>
+                                    </div>
+                                    <div class="item-action item-attribute-group">
+                                        <img class="restrict-interact" src="img/static/close.svg" alt="Delete icon">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="popout-footer color-b1">
+                                <div class="clear-bag-button footer-item">
+                                    Clear bag
+                                </div>
+                                <div class="subtotal footer-item font-size20">
+                                    Subtotal: $<span class="value-raw">34.99</span>
+                                </div>
+                            </div>
+                            <div class="popout-info font-text1 color-b1">
+                                You have no items in your bag!
+                                <span class="font-size14">Note: Static HTML means the changes won't persist across refreshes</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <main class="color-b2">
+
+            <div class="section-item section-landing" data-section-name="landing">
+
+                <div class="hero-image">
+                    <img class="restrict-interact" src="img/static/hero.png" alt="Image of faint trees">
+                </div>
+
+                <div class="hero-text font-text1 color-b1">
+                    Handcrafting jewelry since 2004
+                </div>
+
+            </div>
+
+            <div id="section-about-id" class="section-item section-about" data-section-name="about">
+
+                <div class="section-inside">
+                    <div class="section-body font-text1">
+                        <span class="font-header1 font-size36 color-pk1">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum  auctor, nisl vel fringilla varius, tortor nisi suscipit lorem, eu  laoreet dui justo id eros. Aliquam aliquam est ut ligula porta gravida.  Nulla tortor eros, congue ut sollicitudin sit amet, dignissim in nibh.
+                        <br>&nbsp;<br>
+                        Quisque id iaculis nibh. Donec aliquet tellus diam, in fringilla ipsum  semper a. Mauris interdum erat nisi, ac pharetra orci maximus in. Donec  elementum, arcu gravida tincidunt semper, nibh nunc convallis enim, sit  amet dapibus quam nisl non dui. Vivamus sagittis a elit eu blandit.
+                        <br>&nbsp;<br>
+                        Maecenas massa justo, consequat  nec purus non, semper pellentesque purus. Nulla rhoncus mollis nulla non volutpat. Fusce dictum tristique tortor, vitae efficitur velit laoreet  vel. Vestibulum nulla lorem, placerat non mi vitae, pellentesque viverra orci.
+                        <br>&nbsp;<br>
+                        Curabitur lobortis ex malesuada volutpat volutpat. In sed diam  tincidunt, mollis turpis a, condimentum tellus. Nunc sollicitudin dolor  lacus, vel mattis neque ultricies ac. Vestibulum venenatis placerat  turpis a eleifend. In et eros congue, placerat nisi sed, condimentum mi. Donec pulvinar in enim ut euismod. Vestibulum metus massa, tincidunt  sed tellus ut, sodales aliquam sapien.
+                        <br>&nbsp;<br>
+                        Nulla nunc sem, molestie non urna ac, facilisis accumsan lacus. Nunc at neque non purus dignissim  euismod. Vivamus lectus urna, dignissim vitae nunc ut, venenatis  tincidunt est. Sed nec hendrerit dolor. Suspendisse eleifend eros eu tempus feugiat. Ut lacinia lobortis sapien et malesuada. Cras suscipit luctus purus, at  dignissim metus.
+                        <br>&nbsp;<br>
+                        Nam consequat vestibulum consectetur. Duis tempor  ligula urna, sed ornare neque fermentum eget. Curabitur aliquam lacus  nec ultrices finibus.
+                    </div>
+                    <div class="section-header">
+                        <div class="header-title font-header1">
+                            About me
+                        </div>
+                        <div class="header-description font-text1 font-size24">
+                            Learn a bit more about who will be putting together your next favorite jewelry set
+                        </div>
+                        <div class="header-decoration">
+                            <img class="restrict-interact" src="img/temp/about-me.png" alt="Image of person">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="section-custom-id" class="section-item section-custom color-b2" data-section-name="custom">
+
+                <div class="section-inside">
+                    <div class="section-body font-text1">
+                        <div class="body-item">
+                            Interested in bringing your craziest ideas to life? Get your jewelry just the way you imagine them by designing them yourself!
+                        </div>
+                        <div class="body-item item-layout-main">
+                            <div class="item-text">
+                                Choose between jewelry types as a base, the material the end product will consist of, and the stone that you'll be decorating the set with
+                            </div>
+                            <div class="item-image" data-text="Choices">
+                                <img class="restrict-interact" src="img/static/custom-1.png" alt="Image of choices">
+                            </div>
+                        </div>
+                        <div class="body-item item-layout-separator">
+                            <svg id="chain-id" width="256" height="163" viewBox="0 0 256 163" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Chain image">
+                                <path class="hook" d="M1.10459e-06 31C-3.92159e-07 13.8792 13.8792 3.92159e-07 31 -1.10459e-06C48.1208 -2.60134e-06 62 13.8792 62 31C62 48.1208 48.1208 62 31 62C13.8792 62 2.60134e-06 48.1208 1.10459e-06 31ZM48.8545 31C48.8545 21.1392 40.8607 13.1455 31 13.1455C21.1393 13.1455 13.1455 21.1393 13.1455 31C13.1455 40.8608 21.1393 48.8545 31 48.8545C40.8607 48.8545 48.8545 40.8607 48.8545 31Z" fill="#6B5963"/>
+                                <path class="link" d="M55 42C55 33.7157 61.7157 27 70 27C78.2843 27 85 33.7157 85 42C85 50.2843 78.2843 57 70 57C61.7157 57 55 50.2843 55 42ZM78.6393 42C78.6393 37.2287 74.7713 33.3607 70 33.3607C65.2287 33.3607 61.3607 37.2287 61.3607 42C61.3607 46.7713 65.2287 50.6393 70 50.6393C74.7713 50.6393 78.6393 46.7713 78.6393 42Z" fill="#6B5963"/>
+                                <path class="link" d="M66 57C66 48.7157 72.7157 42 81 42C89.2843 42 96 48.7157 96 57C96 65.2843 89.2843 72 81 72C72.7157 72 66 65.2843 66 57ZM89.6393 57C89.6393 52.2287 85.7713 48.3607 81 48.3607C76.2287 48.3607 72.3607 52.2287 72.3607 57C72.3607 61.7713 76.2287 65.6393 81 65.6393C85.7713 65.6393 89.6393 61.7713 89.6393 57Z" fill="#6B5963"/>
+                                <path class="link" d="M83 64C83 55.7157 89.7157 49 98 49C106.284 49 113 55.7157 113 64C113 72.2843 106.284 79 98 79C89.7157 79 83 72.2843 83 64ZM106.639 64C106.639 59.2287 102.771 55.3607 98 55.3607C93.2287 55.3607 89.3607 59.2287 89.3607 64C89.3607 68.7713 93.2287 72.6393 98 72.6393C102.771 72.6393 106.639 68.7713 106.639 64Z" fill="#6B5963"/>
+                                <path class="link" d="M101 60C101 51.7157 107.716 45 116 45C124.284 45 131 51.7157 131 60C131 68.2843 124.284 75 116 75C107.716 75 101 68.2843 101 60ZM124.639 60C124.639 55.2287 120.771 51.3607 116 51.3607C111.229 51.3607 107.361 55.2287 107.361 60C107.361 64.7713 111.229 68.6393 116 68.6393C120.771 68.6393 124.639 64.7713 124.639 60Z" fill="#6B5963"/>
+                                <path class="link" d="M115 75C115 66.7157 121.716 60 130 60C138.284 60 145 66.7157 145 75C145 83.2843 138.284 90 130 90C121.716 90 115 83.2843 115 75ZM138.639 75C138.639 70.2287 134.771 66.3607 130 66.3607C125.229 66.3607 121.361 70.2287 121.361 75C121.361 79.7713 125.229 83.6393 130 83.6393C134.771 83.6393 138.639 79.7713 138.639 75Z" fill="#6B5963"/>
+                                <path class="link" d="M135 73C135 64.7157 141.716 58 150 58C158.284 58 165 64.7157 165 73C165 81.2843 158.284 88 150 88C141.716 88 135 81.2843 135 73ZM158.639 73C158.639 68.2287 154.771 64.3607 150 64.3607C145.229 64.3607 141.361 68.2287 141.361 73C141.361 77.7713 145.229 81.6393 150 81.6393C154.771 81.6393 158.639 77.7713 158.639 73Z" fill="#6B5963"/>
+                                <path class="link" d="M148 87C148 78.7157 154.716 72 163 72C171.284 72 178 78.7157 178 87C178 95.2843 171.284 102 163 102C154.716 102 148 95.2843 148 87ZM171.639 87C171.639 82.2287 167.771 78.3607 163 78.3607C158.229 78.3607 154.361 82.2287 154.361 87C154.361 91.7713 158.229 95.6393 163 95.6393C167.771 95.6393 171.639 91.7713 171.639 87Z" fill="#6B5963"/>
+                                <path class="link" d="M167 82C167 73.7157 173.716 67 182 67C190.284 67 197 73.7157 197 82C197 90.2843 190.284 97 182 97C173.716 97 167 90.2843 167 82ZM190.639 82C190.639 77.2287 186.771 73.3607 182 73.3607C177.229 73.3607 173.361 77.2287 173.361 82C173.361 86.7713 177.229 90.6393 182 90.6393C186.771 90.6393 190.639 86.7713 190.639 82Z" fill="#6B5963"/>
+                                <path class="link" d="M183 94C183 85.7157 189.716 79 198 79C206.284 79 213 85.7157 213 94C213 102.284 206.284 109 198 109C189.716 109 183 102.284 183 94ZM206.639 94C206.639 89.2287 202.771 85.3607 198 85.3607C193.229 85.3607 189.361 89.2287 189.361 94C189.361 98.7713 193.229 102.639 198 102.639C202.771 102.639 206.639 98.7713 206.639 94Z" fill="#6B5963"/>
+                                <path class="link" d="M201 96C201 87.7157 207.716 81 216 81C224.284 81 231 87.7157 231 96C231 104.284 224.284 111 216 111C207.716 111 201 104.284 201 96ZM224.639 96C224.639 91.2287 220.771 87.3607 216 87.3607C211.229 87.3607 207.361 91.2287 207.361 96C207.361 100.771 211.229 104.639 216 104.639C220.771 104.639 224.639 100.771 224.639 96Z" fill="#6B5963"/>
+                                <path class="hook" d="M194 132C194 114.879 207.879 101 225 101C242.121 101 256 114.879 256 132C256 149.121 242.121 163 225 163C207.879 163 194 149.121 194 132ZM242.854 132C242.854 122.139 234.861 114.146 225 114.146C215.139 114.146 207.146 122.139 207.146 132C207.146 141.861 215.139 149.854 225 149.854C234.861 149.854 242.854 141.861 242.854 132Z" fill="#6B5963"/>
+                            </svg>
+                        </div>
+                        <div class="body-item item-layout-alt">
+                            <div class="item-text">
+                                The design is in your hands! Fully customize the look of your new jewelry down to the detail, as well as where the stones will be lodged.
+                                <br>&nbsp;<br>
+                                Not able to express yourself fully still? You get the opportunity to write about the specifics before finishing up
+                            </div>
+                            <div class="item-image" data-text="Design">
+                                <img class="restrict-interact" src="img/static/custom-2.png" alt="Image of design board">
+                            </div>
+                        </div>
+                        <div class="body-item item-layout-action">
+                            <div class="action-decoration">
+                                <img class="restrict-interact" src="img/static/cta-text.svg" alt="Ready to explore?">
+                            </div>
+                            <a class="action-button font-cta1 font-size32 color-y2" href="custom.html">
+                                See more
+                            </a>
+                        </div>
+                    </div>
+                    <div class="section-header">
+                        <div class="header-title font-header1">
+                            Custom
+                        </div>
+                        <div class="header-description font-text1 font-size24">
+                            Create your own jewelry design
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="section-store-id" class="section-item section-store" data-section-name="store">
+
+                <div class="section-inside">
+                    <div class="section-body font-text1">
+                        <div class="store-items">
+                            <a class="store-item" href="item-jellyfish-necklace.html">
+                                <div class="item-image">
+                                    <img class="restrict-interact" src="img/temp/item-jellyfish.png" alt="Jellyfish necklace">
+                                </div>
+                                <div class="item-title font-text1 font-size32">
+                                    Jellyfish necklace
+                                </div>
+                            </a>
+                            <a class="store-item" href="item-eye-necklace.html">
+                                <div class="item-image">
+                                    <img class="restrict-interact" src="img/temp/item-eye-necklace.png" alt="Eye necklace">
+                                </div>
+                                <div class="item-title font-text1 font-size32">
+                                    Eye necklace
+                                </div>
+                            </a>
+                        </div>
+                        <a class="store-action font-cta1 font-size32" href="store.html">
+                            Visit store
+                        </a>
+                    </div>
+                    <div class="section-header">
+                        <div class="header-title font-header1">
+                            Store
+                        </div>
+                        <div class="header-description font-text1 font-size24">
+                            Each jewelry set is handcrafted
+                        </div>
+                        <div class="header-decoration">
+                            <img class="restrict-interact" src="img/static/store.png" alt="Image of plant leaves">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="section-gallery-id" class="section-item section-gallery" data-section-name="gallery">
+                <div class="section-inside">
+                    <div class="section-body">
+                        <div id="gallery-items-id" class="gallery-items" tabindex="0">
+                            <div class="gallery-item">
+                                <div class="item-image">
+                                    <img class="restrict-interact" src="img/temp/leaf-pendant.png" alt="Image of a pendant depicting a leaf">
+                                </div>
+                                <div class="item-text font-text1">
+                                    Photo by <a class="color-b1" href="https://unsplash.com/@thehouseofthewitch" target="_blank">The Witch's House</a> on <a class="color-b1" href="https://unsplash.com/photos/a-necklace-with-a-leaf-and-a-heart-on-it-UP8G9ge9G3M" target="_blank">Unsplash</a>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <div class="item-image">
+                                    <img class="restrict-interact" src="img/temp/leaf-earrings.png" alt="Image of a set of earrings depicting a leaf">
+                                </div>
+                                <div class="item-text font-text1">
+                                    Photo by <a class="color-b1" href="https://unsplash.com/@thehouseofthewitch" target="_blank">The Witch's House</a> on <a class="color-b1" href="https://unsplash.com/photos/a-pair-of-earrings-sitting-on-top-of-a-table-jI4ih9RTgTc" target="_blank">Unsplash</a>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <div class="item-image">
+                                    <img class="restrict-interact" src="img/temp/handcrafting-1.png" alt="Image of handcrafting">
+                                </div>
+                                <div class="item-text font-text1">
+                                    Photo by <a class="color-b1" href="https://unsplash.com/@girl_behindthelens" target="_blank">Amy Vann</a> on <a class="color-b1" href="https://unsplash.com/photos/a-person-holding-a-phone-T7Bthd1MCks" target="_blank">Unsplash</a>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <div class="item-image">
+                                    <img class="restrict-interact" src="img/temp/eye-necklace.png" alt="Image of an eye necklace">
+                                </div>
+                                <div class="item-text font-text1">
+                                    Photo by <a class="color-b1" href="https://unsplash.com/@thehouseofthewitch" target="_blank">The Witch's House</a> on <a class="color-b1" href="https://unsplash.com/photos/a-silver-necklace-adorned-with-amethyst-stones-A_y33JqUvf8" target="_blank">Unsplash</a>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <div class="item-image">
+                                    <img class="restrict-interact" src="img/temp/handcrafting-2.png" alt="Image of handcrafting">
+                                </div>
+                                <div class="item-text font-text1">
+                                    Photo by <a class="color-b1" href="https://unsplash.com/@kellysikkema" target="_blank">Kelly Sikkema</a> on <a class="color-b1" href="https://unsplash.com/photos/a-woman-is-working-on-a-piece-of-jewelry-g4m_xpePyiU" target="_blank">Unsplash</a>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <div class="item-image">
+                                    <img class="restrict-interact" src="img/temp/jellyfish-necklace.png" alt="Image of a jellyfish necklace">
+                                </div>
+                                <div class="item-text font-text1">
+                                    Photo by <a class="color-b1" href="https://unsplash.com/@thehouseofthewitch" target="_blank">The Witch's House</a> on <a class="color-b1" href="https://unsplash.com/photos/a-close-up-of-a-necklace-on-a-table-QwKdfKMMs68" target="_blank">Unsplash</a>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <div class="item-image">
+                                    <img class="restrict-interact" src="img/temp/handcrafting-3.png" alt="Image of handcrafting">
+                                </div>
+                                <div class="item-text font-text1">
+                                    Photo by <a class="color-b1" href="https://unsplash.com/@kellysikkema" target="_blank">Kelly Sikkema</a> on <a class="color-b1" href="https://unsplash.com/photos/silver-colored-earring-LxyTMbF3pHk" target="_blank">Unsplash</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="gallery-button-previous-id" class="gallery-button-previous" tabindex="0">
+                            <div class="button-inside">
+                                <img class="restrict-interact" src="img/static/arrow-left.svg" alt="Arrow pointing left">
+                            </div>
+                        </div>
+                        <div id="gallery-button-next-id" class="gallery-button-next" tabindex="0">
+                            <div class="button-inside">
+                                <img class="restrict-interact" src="img/static/arrow-right.svg" alt="Arrow pointing right">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-header">
+                        <div class="header-title font-header1">
+                            Gallery
+                        </div>
+                        <div class="header-description font-text1 font-size24">
+                            From a sneak peak into the process that goes into jewelry handcrafting, to showcasing some of my favorite work over the years
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="section-contact-id" class="section-item section-contact" data-section-name="contact">
+
+                <div class="section-inside">
+                    <div class="section-body">
+                        <form action="javascript:void(0);">
+                            <div class="inputs-group group-top">
+                                <div class="ifta-label-group label-group-first">
+                                    <input id="contact-full-name" type="text" class="font-text1 color-b1" name="contact-name" placeholder="e.g. Jane Doe" required autocomplete="off">
+                                    <label for="contact-full-name" class="ifta-label restrict-select font-cta1">Full name</label>
+                                </div>
+                                <div class="ifta-label-group label-group-second">
+                                    <input id="contact-email" type="email" class="font-text1 color-b1" name="contact-email" pattern="^[^@]+@[^@]+\.[^@]+$" placeholder="e.g. janedoe@website.com" required autocomplete="off">
+                                    <label for="contact-email" class="ifta-label restrict-select font-cta1">Email</label>
+                                </div>
+                                <div class="ifta-label-group label-group-third">
+                                    <select id="contact-reason" class="font-text1 color-b1" name="contact-reason" required autocomplete="off">
+                                        <option value="0" selected>choose one</option>
+                                        <option value="1">Platea</option>
+                                        <option value="2">Morbi</option>
+                                    </select>
+                                    <label for="contact-reason" class="ifta-label restrict-select font-cta1">Inquiry category</label>
+                                    <div class="decoration-item decoration-caret restrict-interact">
+                                        <img class="restrict-interact" src="img/static/caret.svg" alt="Decoration caret">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inputs-group group-bottom">
+                                <div class="ifta-label-group">
+                                    <textarea id="contact-description" type="text" class="font-text1 color-b1" name="contact-description" placeholder="Tell us what's on your mind!" required autocomplete="off"></textarea>
+                                    <label for="contact-description" class="ifta-label restrict-select font-cta1">Inquiry description</label>
+                                    <div class="description-decoration">
+                                        <img class="restrict-interact" src="img/static/contact-decoration.svg" alt="Decoration rings">
+                                    </div>
+                                </div>
+                                <div class="input-captcha">
+                                    <label class="custom-checkbox" aria-label="I accept the Terms of Service">
+                                        <input class="communications-captcha" type="checkbox" autocomplete="off" required>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <div class="captcha-rules color-b2 font-text1">
+                                        I accept the
+                                        <span>
+                                            <a class="font-cta1 color-b1" href="#">Terms of Service</a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="next-step-button">
+                                    <input type="submit" class="font-text2 color-b1" value="Send">
+                                </div>
+                            </div>
+                        </form>
+                        <div class="form-decoration">
+                            <img class="restrict-interact" src="img/static/contact.png" alt="Image of tree">
+                        </div>
+                    </div>
+                    <div class="section-header">
+                        <div class="header-title font-header1">
+                            Contact
+                        </div>
+                        <div class="header-description font-text1 font-size24">
+                            Got a question, or a special idea for custom jewelry? Use the form below to reach out!
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+        <footer>
+
+            <div class="footer-body">
+                <div class="body-item-group group-top">
+                    <div class="group-item group-header font-header1 color-b1">My information</div>
+                    <div class="group-item font-text1 color-b2">117w imaginary road</div>
+                    <div class="group-item font-text1 color-b2">Thargomindah, Australia 4492</div>
+                    <a href="tel:(123) 456 7890" class="group-item font-text1 color-b2">(123) 456 7890</a>
+                    <a href="mailto:info@leenoo.com" class="group-item font-text1 color-b2">info@leenoo.com</a>
+                </div>
+                <div class="body-item-group group-bottom">
+
+                    <div class="group-item group-left">
+                        <div class="logo-image">
+                            <img class="restrict-interact" src="img/static/logo.svg" alt="Logo">
+                        </div>
+                        <div class="category-items font-header1 color-b2">
+                            <a class="category-item" href="store.html">Store</a>
+                            <a class="category-item" href="custom.html">Custom</a>
+                            <a class="category-item" href="tos.html">Terms of Service</a>
+                        </div>
+                    </div>
+
+                    <div class="group-item group-right">
+                        <a href="#" class="group-item font-text1">
+                            <img class="restrict-interact" src="../img/handnote-logo.svg" alt="Handnote logo">
+                        </a>
+                        <a href="#" class="group-item font-text1">
+                            <img class="restrict-interact" src="../img/plintoo-logo.svg" alt="Plintoo logo">
+                        </a>
+                        <a href="#" class="group-item font-text1">
+                            <img class="restrict-interact" src="../img/kisfland-logo.svg" alt="Kisfland logo">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="footer-mini">
+                <div class="footer-mini-left font-text1 font-size14 color-w1">© 2026 Leenoo</div>
+                <div class="footer-mini-right font-text1 font-size14 color-w1">Designed & Developed by Manos<span><img class="restrict-interact" src="../img/smile.svg" alt="Smile :)"></span></div>
+            </div>
+
+        </footer>
+
+    </body>
+
+</html>
