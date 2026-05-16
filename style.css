@@ -4,6 +4,10 @@
     --color-w1: #e8e8e8;
     --color-w2: #4a4949;
     --color-p1: #2D2749;
+    --color-p2: #6B5963;
+    --color-p2-hovered: #9A7E8E;
+    --color-pk1: #E2679E;
+    --color-pk2: #F696C1;
     --color-bn1: #683835;
     --color-be1: #091f52;
     --color-be2: #458ff6;
@@ -13,6 +17,8 @@
     --color-gr2: #46615c;
     --color-r1: #7D3939;
     --color-r2: #AB5353;
+    --color-y1: #FDFFD8;
+    --color-y2: #FFFD82;
     --filter-color-be2: invert(63%) sepia(31%) saturate(7488%) hue-rotate(194deg) brightness(97%) contrast(100%);
 }
 
@@ -79,6 +85,11 @@ main[data-current-project-id=ant] .slider-items .item.c-hover-mirrored {
     outline: 4px solid var(--color-gr1);
 }
 
+main[data-current-project-id=lee] .slider-items .item:hover,
+main[data-current-project-id=lee] .slider-items .item.c-hover-mirrored {
+    outline: 4px solid var(--color-pk1);
+}
+
 main[data-current-project-id=mus] .slider-items .item:hover,
 main[data-current-project-id=mus] .slider-items .item.c-hover-mirrored {
     outline: 4px solid var(--color-b1);
@@ -130,6 +141,15 @@ main[data-current-project-id=ant] .slider-arrows .slider-arrow:hover {
     background-color: var(--color-gr1);
 }
 
+main[data-current-project-id=lee] .slider-arrows .slider-arrow {
+    background-color: var(--color-y1);
+    border-color: var(--color-pk1);
+}
+
+main[data-current-project-id=lee] .slider-arrows .slider-arrow:hover {
+    background-color: var(--color-pk1);
+}
+
 main[data-current-project-id=mus] .slider-arrows .slider-arrow {
     background-color: var(--color-w1);
     border-color: var(--color-b1);
@@ -138,7 +158,6 @@ main[data-current-project-id=mus] .slider-arrows .slider-arrow {
 main[data-current-project-id=mus] .slider-arrows .slider-arrow:hover {
     background-color: var(--color-b1);
 }
-
 
 main[data-current-project-id=tra] .slider-arrows .slider-arrow {
     background-color: var(--color-be3);
@@ -178,6 +197,14 @@ main[data-current-project-id=ant] .slider-arrows .slider-arrow::after {
 
 main[data-current-project-id=ant] .slider-arrows .slider-arrow:hover::after {
     background-color: var(--color-p1);
+}
+
+main[data-current-project-id=lee] .slider-arrows .slider-arrow::after {
+    background-color: var(--color-pk1);
+}
+
+main[data-current-project-id=lee] .slider-arrows .slider-arrow:hover::after {
+    background-color: var(--color-y2);
 }
 
 main[data-current-project-id=mus] .slider-arrows .slider-arrow::after {
@@ -250,6 +277,13 @@ main[data-current-project-id=ant] .slider-items-title.c-hover-mirrored,
     color: var(--color-gr2);
 }
 
+main[data-current-project-id=lee] .slider-items-title:hover,
+main[data-current-project-id=lee] .slider-items-title.c-hover-mirrored,
+.next-slider-item-ghost[data-ghost-project-id=lee]:hover ~ .ghost-item-title,
+.next-slider-item-ghost[data-ghost-project-id=lee] ~ .ghost-item-title:hover {
+    color: var(--color-p2);
+}
+
 main[data-current-project-id=mus] .slider-items-title:hover,
 main[data-current-project-id=mus] .slider-items-title.c-hover-mirrored,
 .next-slider-item-ghost[data-ghost-project-id=mus]:hover ~ .ghost-item-title,
@@ -284,6 +318,10 @@ main[data-current-project-id=zis] .slider-decoration svg path.c-animate {
 
 main[data-current-project-id=ant] .slider-decoration svg path.c-animate {
     fill: var(--color-gr1);
+}
+
+main[data-current-project-id=lee] .slider-decoration svg path.c-animate {
+    fill: var(--color-pk1);
 }
 
 main[data-current-project-id=mus] .slider-decoration svg path.c-animate {
