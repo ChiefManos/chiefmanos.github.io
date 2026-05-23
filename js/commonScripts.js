@@ -251,3 +251,20 @@ function blurThenFocus(input) {
   input.blur();
   input.focus();
 }
+
+function scrollToAnchor(target, behavior = "smooth") {
+
+  if (!target) {
+    return;
+  }
+
+  const targetRect = target.getBoundingClientRect();
+  const bodyRect = document.body.getBoundingClientRect();
+  const position = targetRect.top - bodyRect.top;
+
+  window.scrollTo({
+    top: position,
+    behavior: behavior
+  });
+
+}
