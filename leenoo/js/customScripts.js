@@ -1100,23 +1100,6 @@ function handleHeaderActions() {
 
 }
 
-function scrollToAnchor(target, behavior = "smooth") {
-
-  if (!target) {
-    return;
-  }
-
-  const targetRect = target.getBoundingClientRect();
-  const bodyRect = document.body.getBoundingClientRect();
-  const position = targetRect.top - bodyRect.top;
-
-  window.scrollTo({
-    top: position,
-    behavior: behavior
-  });
-
-}
-
 function getRandomInt(min, max) {
 
   min = Math.ceil(min);
