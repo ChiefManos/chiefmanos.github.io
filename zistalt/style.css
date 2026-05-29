@@ -114,6 +114,7 @@ img {
     text-indent: 7px;
     appearance: none;
     cursor: pointer;
+    padding: 30px 4px 2px;
 }
 
 .ifta-label-group select option {
