@@ -3672,10 +3672,12 @@ footer .footer-mini .footer-mini-right span {
         position: absolute;
         display: block;
         top: -22px;
-        right: 18px;
+        right: 0;
+        left: 0;
         background-color: var(--color-p1-hovered);
         width: 65px;
         height: 22px;
+        margin: auto;
         border-radius: 5px 5px 0px 0px;
     }
 
@@ -3684,7 +3686,10 @@ footer .footer-mini .footer-mini-right span {
         position: absolute;
         display: block;
         top: -26px;
-        right: 41px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        max-width: fit-content;
         transition: 0.35s cubic-bezier(.68,-0.55,.27,1.55);
     }
 
