@@ -302,22 +302,6 @@ img {
     pointer-events: none;
 }
 
-.restrict-select {
-    user-select: none;
-}
-
-.restrict-interact {
-    user-select: none;
-    pointer-events: none;
-}
-
-.restrict-text-overflow {
-    text-wrap: nowrap;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-}
-
 .c-display-none {
     display: none;
 }
