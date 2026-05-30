@@ -43,11 +43,6 @@
     color: var(--color-r1)!important;
 }
 
-.restrict-interact {
-    pointer-events: none;
-    user-select: none;
-}
-
 .font-header1 {
     font-family: 'Syne Mono';
     font-style: normal;
