@@ -19,3 +19,81 @@
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+
+.restrict-text-wrap {
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.font-size10 {
+    font-size: 10px;
+}
+
+.font-size12 {
+    font-size: 12px;
+}
+
+.font-size14 {
+    font-size: 14px;
+}
+
+.font-size16 {
+    font-size: 16px;
+}
+
+.font-size18 {
+    font-size: 18px;
+}
+
+.font-size20 {
+    font-size: 20px;
+}
+
+.font-size22 {
+    font-size: 22px;
+}
+
+.font-size24 {
+    font-size: 24px;
+}
+
+.font-size32 {
+    font-size: 32px;
+}
+
+.font-size36 {
+    font-size: 36px;
+}
+
+.font-size48 {
+    font-size: 48px;
+}
+
+.font-size58 {
+    font-size: 58px;
+}
+
+.nudge-animation {
+    animation: nudge-animation 0.5s ease-in-out!important;
+}
+
+.bounce-animation {
+    animation: bounce-animation 0.5s ease-in-out!important;
+}
+
+@keyframes nudge-animation {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-3px); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes bounce-animation {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-5px); }
+    50% { transform: translateY(0px); }
+    75% { transform: translateY(-3px); }
+    100% { transform: translateY(0); }
+}
