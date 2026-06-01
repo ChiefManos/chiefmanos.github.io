@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Fascinate&family=Finger+Paint&family=Libre+Barcode+128&display=swap" rel="stylesheet">
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous" defer></script>
+        <script type="text/javascript" src="/js/commonScripts.js"defer></script>
+        <script type="text/javascript" src="js/customScripts.js"defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous" defer></script>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
+        <link rel="stylesheet" href="/style-common.css" />
+        <link rel="stylesheet" href="style.css" />
+
+        <link rel="icon" href="img/static/icon.svg" />
+        <title>Schedule your adventure - Knowlanders</title>
+    </head>
+
+    <body class="schedule inner-page">
+
+        <a href="../index.html" class="back-to-projects-link">
+            <div class="link-decoration">
+                <img class="restrict-interact" src="../img/icon.png" alt="Fav icon" />
+            </div>
+            <div class="link-text">
+                Back to projects
+            </div>
+        </a>
+
+        <header class="header-common">
+
+            <div class="header-inside">
+                <a href="index.html" class="logo">
+                    <img class="restrict-interact" src="img/static/logo.svg" alt="Logo">
+                </a>
+                <div class="category-items font-text1 font-size32 color-w1">
+                    <a href="index.html#section-about-id" class="category-item">About us</a>
+                    <a href="index.html#section-vistas-id" class="category-item">Vistas</a>
+                    <a href="schedule.html" class="category-item">Schedule</a>
+                    <a href="index.html#section-gallery-id" class="category-item">Gallery</a>
+                    <a href="index.html#section-contact-id" class="category-item">Contact</a>
+                </div>
+                <div class="menu-button-wrapper">
+                    <div id="mobile-menu-button-id" class="header-button">
+                        <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M34 0C52.7777 0 68 15.2223 68 34C68 52.7777 52.7777 68 34 68C15.2223 68 0 52.7777 0 34C0 15.2223 15.2223 0 34 0ZM34 3C16.8792 3 3 16.8792 3 34C3 51.1208 16.8792 65 34 65C51.1208 65 65 51.1208 65 34C65 16.8792 51.1208 3 34 3Z" fill="black"/>
+                            <line class="line-top" x1="24" y1="25" x2="44" y2="25" stroke="black" stroke-width="4" stroke-linecap="round"/>
+                            <line class="line-middle" x1="24" y1="33" x2="44" y2="33" stroke="black" stroke-width="4" stroke-linecap="round"/>
+                            <line class="line-bottom" x1="24" y1="41" x2="44" y2="41" stroke="black" stroke-width="4" stroke-linecap="round"/>
+                        </svg>
+                        <div class="decoration-item">
+                            <img class="restrict-interact" src="img/static/anchor.svg" alt="Anchor">
+                        </div>
+                    </div>
+                    <div class="menu-popout color-w1">
+                        <div class="popout-header font-text1">
+                            Categories
+                        </div>
+                        <div class="popout-body font-header2">
+                            <a href="index.html#section-about-id" class="category-item item-about">
+                                About us
+                            </a>
+                            <a href="index.html#section-vistas" class="category-item item-custom">
+                                Vistas
+                            </a>
+                            <a href="schedule.html" class="category-item item-store">
+                                Schedule
+                            </a>
+                            <a href="index.html#section-gallery-id" class="category-item item-gallery">
+                                Gallery
+                            </a>
+                            <a href="index.html#section-contact-id" class="category-item item-contact">
+                                Contact
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="decorations-container">
+                    <div class="decoration-item diver">
+                        <img class="restrict-interact" src="img/static/header-decoration.png" alt="Image of diver swimming to the light">
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <main class="color-be1">
+
+            <div id="section-schedule-id" class="section-item section-schedule" data-section-name="schedule" data-current-stage="0">
+
+                <div class="section-inside">
+                    <div class="section-header">
+                        <div class="header-title font-header1">
+                            <div class="title-text">
+                                Schedule
+                            </div>
+                            <div class="title-separator"></div>
+                            <div class="title-decoration">
+                                <img class="restrict-interact" src="img/static/diver.svg" alt="Diver">
+                            </div>
+                        </div>
+                        <div class="header-description font-text1">
+                            Eager to see and experience some of these locations for yourself, with the help of our crew? Schedule your next adventure today!
+                        </div>
+                    </div>
+                    <div class="section-body">
+                        <div class="body-item item-left">
+                            <div class="group-items-wrapper">
+                                <div class="group-items" data-stage="0">
+                                    <div class="group-item">
+                                        <div class="item-input ifta-label-group">
+                                            <select id="schedule-location" class="font-text1 color-b1" name="schedule-location" required autocomplete="off">
+                                                <option value="0" selected>choose one</option>
+                                                <option value="1">Agios Georgios</option>
+                                                <option value="2">Argolis</option>
+                                                <option value="3">Zakynthos</option>
+                                                <option value="4">Limin Markopoulou</option>
+                                                <option value="5">Mouresi</option>
+                                            </select>
+                                            <label for="schedule-location" class="ifta-label restrict-select font-cta1">Location</label>
+                                            <div class="decoration-item decoration-caret restrict-interact">
+                                                <img class="restrict-interact" src="img/static/caret.svg" alt="Decoration caret">
+                                            </div>
+                                        </div>
+                                        <div class="item-text font-text1">
+                                            The current exploration locations available are select coves, beaches, and lagoons in Greece: <b>Agios Georgios</b>, <b>Mouresi</b>, and <b>Zakynthos</b> are among our clients' top choices.
+                                        </div>
+                                        <div class="decoration-item">
+                                            <img class="restrict-interact" src="img/static/island-small.svg" alt="Small island">
+                                        </div>
+                                    </div>
+                                    <div class="group-item">
+                                        <div class="item-input ifta-label-group">
+                                            <select id="schedule-people" class="font-text1 color-b1" name="schedule-people" required autocomplete="off">
+                                                <option value="0" selected>choose one</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                            </select>
+                                            <label for="schedule-people" class="ifta-label restrict-select font-cta1">People</label>
+                                            <div class="decoration-item decoration-caret restrict-interact">
+                                                <img class="restrict-interact" src="img/static/caret.svg" alt="Decoration caret">
+                                            </div>
+                                        </div>
+                                        <div class="item-text font-text1">
+                                            How many people will be going on this expedition? Reserve up to two boats <b>(12 seats total)</b> for you and your team.
+                                        </div>
+                                        <div class="decoration-item">
+                                            <img class="restrict-interact" src="img/static/people.svg" alt="People">
+                                        </div>
+                                    </div>
+                                    <div class="group-item">
+                                        <div class="item-input ifta-label-group">
+                                            <input type="date" id="schedule-date" class="font-text1 color-b1" name="schedule-date" required autocomplete="off" />
+                                            <label for="schedule-date" class="ifta-label restrict-select font-cta1">Date</label>
+                                            <div class="decoration-item reef">
+                                                <img class="restrict-interact" src="img/static/reef-red.png" alt="Reef">
+                                            </div>
+                                        </div>
+                                        <div class="item-text font-text1">
+                                            Select the start date of the multi-day expedition. Each scheduled series should occupy up to 3 days.
+                                        </div>
+                                        <div class="decoration-item">
+                                            <img class="restrict-interact" src="img/static/planner.svg" alt="Planner">
+                                        </div>
+                                    </div>
+                                    <div class="group-separator">
+                                        <img class="restrict-interact" src="img/static/leaf-vertical.svg" alt="Leaf">
+                                    </div>
+                                </div>
+                                <div class="group-items" data-stage="1">
+                                    <div class="group-item">
+                                        <div class="item-input ifta-label-group">
+                                            <input id="schedule-email" type="email" class="font-text1 color-b1" name="schedule-email" pattern="^[^@]+@[^@]+\.[^@]+$" placeholder="e.g. janedoe@website.com" required autocomplete="off">
+                                            <label for="schedule-email" class="ifta-label restrict-select font-cta1">Email</label>
+                                        </div>
+                                        <div class="item-text font-text1">
+                                            Your ticket will be sent to this email address.
+                                        </div>
+                                    </div>
+                                    <div class="group-item">
+                                        <div class="item-input ifta-label-group">
+                                            <input id="schedule-full-name" type="text" class="font-text1 color-b1" name="schedule-full-name" placeholder="e.g. Jane Doe" required autocomplete="off">
+                                            <label for="schedule-full-name" class="ifta-label restrict-select font-cta1">Full name</label>
+                                        </div>
+                                        <div class="item-text font-text1">
+                                            The full name that will be displayed on your ticket.
+                                        </div>
+                                    </div>
+                                    <div class="group-separator">
+                                        <img class="restrict-interact" src="img/static/leaf-vertical.svg" alt="Leaf">
+                                    </div>
+                                </div>
+                                <div class="group-items" data-stage="2">
+                                    <div class="group-item">
+                                        <div class="item-input ifta-label-group">
+                                            <select id="schedule-payment" class="font-text1 color-b1" name="schedule-payment" required autocomplete="off">
+                                                <option value="0" selected>choose one</option>
+                                                <option value="1">Payment method 1</option>
+                                                <option value="2">Payment method 2</option>
+                                                <option value="3">Payment method 3</option>
+                                            </select>
+                                            <label for="schedule-payment" class="ifta-label restrict-select font-cta1">Payment method</label>
+                                            <div class="decoration-item decoration-caret restrict-interact">
+                                                <img class="restrict-interact" src="img/static/caret.svg" alt="Decoration caret">
+                                            </div>
+                                        </div>
+                                        <div class="item-text font-text1">
+                                            Choose which method you will be paying with. The payment will be made on your provider's portal.
+                                        </div>
+                                    </div>
+                                    <div class="group-separator">
+                                        <img class="restrict-interact" src="img/static/leaf-vertical.svg" alt="Leaf">
+                                    </div>
+                                </div>
+                                <div class="group-items" data-stage="3">
+                                    <div class="group-item item-left font-text1">
+                                        <div class="item-image">
+                                            <img class="restrict-interact" src="img/static/check.svg" alt="Check">
+                                        </div>
+                                        <div class="item-text">
+                                            Your adventure has been scheduled! The ticket for access to your reservation is now available.
+                                        </div>
+                                        <div class="item-note font-size14">
+                                            Note: This is an HTML demonstration and nothing was actually POSTed.
+                                        </div>
+                                    </div>
+                                    <div class="group-item item-right">
+                                        <div class="ticket-model-wrapper">
+                                            <div class="ticket-faceplate">
+                                                <div class="ticket-name font-text1 restrict-text-overflow"></div>
+                                                <div class="ticket-details">
+                                                    <div class="ticket-detail ticket-location">
+                                                        <div class="detail-title font-header2 font-size16">
+                                                            Location
+                                                        </div>
+                                                        <div class="detail-value restrict-text-overflow font-text1"></div>
+                                                    </div>
+                                                    <div class="ticket-detail ticket-date">
+                                                        <div class="detail-title font-header2 font-size16">
+                                                            Valid from
+                                                        </div>
+                                                        <div class="detail-value restrict-text-overflow font-text1"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="ticket-code">
+                                                    <div class="code-decoration">
+                                                        <img class="restrict-interact" src="img/static/anchor-small.svg" alt="Anchor">
+                                                    </div>
+                                                    <div class="code-value font-text2 restrict-interact"></div>
+                                                    <div class="code-decoration">
+                                                        <img class="restrict-interact" src="img/static/anchor-small.svg" alt="Anchor">
+                                                    </div>
+                                                </div>
+                                                <div class="decorations-container">
+                                                    <div class="decoration-item circles">
+                                                        <img class="restrict-interact" src="img/static/circles.svg" alt="Circles">
+                                                    </div>
+                                                    <div class="decoration-item anchor">
+                                                        <img class="restrict-interact" src="img/static/anchor-medium.svg" alt="Anchor">
+                                                    </div>
+                                                    <div class="decoration-item diver">
+                                                        <img class="restrict-interact" src="img/static/diver.svg" alt="Diver">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ticket-backplate"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="continue-button color-be1 font-text1" data-text-continue="Continue" data-text-next="Next" data-text-finish="Finish">
+                                <div class="button-text">
+                                    Next
+                                </div>
+                                <div class="button-decoration">
+                                    <img class="restrict-interact" src="img/static/fish-orange.png" alt="Fish">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body-item item-right">
+                            <div class="group-item item-top">
+                                <img class="restrict-interact" src="img/static/diver-with-fish-1.png" alt="Diver with fish">
+                            </div>
+                            <div class="group-item item-bottom">
+                                <img class="restrict-interact" src="img/static/diver-with-fish-2.png" alt="Divers with fish">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="decorations-container">
+                    <div class="decoration-item fish-blue">
+                        <img loading="lazy" class="restrict-interact" src="img/static/fish-blue.gif" alt="Fish">
+                    </div>
+                    <div class="decoration-item fish-red">
+                        <img loading="lazy" class="restrict-interact" src="img/static/fish-red.gif" alt="Fish">
+                    </div>
+                    <div class="decoration-item reef-brown">
+                        <img class="restrict-interact" src="img/static/reef-brown.png" alt="Reef">
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+        <footer>
+
+            <div class="footer-header">
+                <div class="header-title font-header2 font-size24">
+                    Dive with us...
+                </div>
+                <div class="header-decoration">
+                    <div class="decoration-item decoration-left">
+                        <img class="restrict-interact" src="img/static/leaf-curved.svg" alt="Leaf decoration">
+                    </div>
+                    <div class="decoration-item decoration-right">
+                        <img class="restrict-interact" src="img/static/leaf-curved.svg" alt="Leaf decoration">
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-body">
+
+                <div class="footer-details">
+                    <div class="details-left">
+                        <div class="details-group information-group">
+                            <div class="group-title">
+                                <div class="title-text font-header2">
+                                    Our information
+                                </div>
+                                <div class="title-decoration">
+                                    <img class="restrict-interact" src="img/static/leaf.svg" alt="Leaf decoration">
+                                </div>
+                            </div>
+                            <div class="group-items font-text1">
+                                <div class="group-item">
+                                    117w imaginary road
+                                </div>
+                                <div class="group-item">
+                                    Piraeus, Greece 4492 
+                                </div>
+                                <a href="tel:(123) 456 7890" class="group-item">(123) 456 7890</a>
+                                <a href="mailto:info@knowlanders.com" class="group-item">info@knowlanders.com</a>
+                            </div>
+                        </div>
+                        <div class="details-group categories-group font-header2">
+                            <div class="group-items">
+                                <a class="group-item" href="schedule.html">Schedule</a>
+                                <a class="group-item" href="tos.html">Terms of Service</a>
+                                <a class="group-item" href="cookie-policy.html">Cookie Policy</a>
+                            </div>
+                            <div class="decoration-item">
+                                <img class="restrict-interact" src="img/static/leaf-small.svg" alt="Leaf decoration">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-right">
+                        <div class="group-title font-text1">
+                            Join the conversation on our socials
+                        </div>
+                        <div class="group-items">
+                            <a href="#" class="group-item">
+                                <img class="restrict-interact" src="../img/handnote-logo.svg" alt="Handnote logo">
+                            </a>
+                            <a href="#" class="group-item">
+                                <img class="restrict-interact" src="../img/plintoo-logo.svg" alt="Plintoo logo">
+                            </a>
+                            <a href="#" class="group-item">
+                                <img class="restrict-interact" src="../img/kisfland-logo.svg" alt="Kisfland logo">
+                            </a>
+                        </div>
+                        <div class="decorations-container">
+                            <div class="decoration-item bubbles">
+                                <img class="restrict-interact" src="img/static/bubbles.svg" alt="Bubbles">
+                            </div>
+                            <div class="decoration-item leaf">
+                                <img class="restrict-interact" src="img/static/leaf-long.svg" alt="Leaf decoration">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="logo">
+                    <img class="restrict-interact" src="img/static/logo.svg" alt="Logo">
+                </a>
+
+            </div>
+
+            <div class="footer-mini">
+                <div class="footer-mini-left font-text1 font-size10 color-w1">© 2026 Knowlanders</div>
+                <div class="footer-mini-right font-text1 font-size10 color-w1">Designed & Developed by Manos<span><img class="restrict-interact" src="../img/smile.svg" alt="Smile :)"></span></div>
+            </div>
+
+            <div class="decorations-container">
+                <div class="decoration-item background">
+                    <img class="restrict-interact" src="img/static/diver.png" alt="Image of person swiming in water">
+                </div>
+                <div class="decoration-item fish fish-red-1">
+                    <img loading="lazy" class="restrict-interact" src="img/static/fish-red.gif" alt="Fish">
+                </div>
+                <div class="decoration-item fish fish-red-2">
+                    <img loading="lazy" class="restrict-interact" src="img/static/fish-red.gif" alt="Fish">
+                </div>
+                <div class="decoration-item fish fish-blue">
+                    <img loading="lazy" class="restrict-interact" src="img/static/fish-blue.gif" alt="Fish">
+                </div>
+                <div class="decoration-item fish fish-orange">
+                    <img loading="lazy" class="restrict-interact" src="img/static/fish-orange.gif" alt="Fish">
+                </div>
+                <div class="decoration-item reef reef-left">
+                    <img loading="lazy" class="restrict-interact" src="img/static/reef.png" alt="Image of reef rock">
+                </div>
+                <div class="decoration-item reef reef-right">
+                    <img loading="lazy" class="restrict-interact" src="img/static/reef.png" alt="Image of reef rock">
+                </div>
+            </div>
+
+        </footer>
+        
+        <div id="fullscreen-window-id" class="fullscreen-window">
+            <div class="fullscreen-content"></div>
+            <div class="fullscreen-close">
+                <img class="restrict-interact" src="img/static/close.svg" alt="Close symbol">
+            </div>
+        </div>
+
+    </body>
+
+</html>
