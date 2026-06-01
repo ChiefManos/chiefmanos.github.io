@@ -749,7 +749,8 @@ main .section-landing .hero-text {
     z-index: 1;
 }
 
-main .section-landing .hero-image {
+main .section-landing .hero-image,
+main .section-landing .hero-image img {
     width: 100%;
 }
 
