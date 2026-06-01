@@ -245,6 +245,17 @@ function cPreventDefault(event) {
   event.preventDefault();
 }
 
+function cClearTimeout(element) {
+  if (element.customTimeout) {
+    clearTimeout(element.customTimeout);
+  }
+}
+
+function clearThenSetTimeout(element, callback, timeout = 0) {
+  cClearTimeout(element);
+  element.customTimeout = setTimeout(() => callback(), timeout);
+}
+
 function blurThenFocus(input) {
   input.click();
   input.focus();
@@ -266,5 +277,46 @@ function scrollToAnchor(target, behavior = "smooth") {
     top: position,
     behavior: behavior
   });
+
+}
+
+function handleIftaLabelGroup(group) {
+
+  const input = group.querySelector("input, select");
+  let isSelect = input.nodeName === "SELECT";
+
+  function handleFocusCallback() {
+    group.classList.add("ifta-valid");
+  }
+  function handleCheckValidityCallback(event) {
+    clearThenSetTimeout(event.target || event, () => {
+
+      const isValid = isSelect 
+        ? parseInt(input.options[input.selectedIndex].value) !== 0
+        : input.validity.valid;
+      const isInvalid = !isSelect && input.value.trim() === "";
+
+      group.classList.toggle("ifta-valid", isValid);
+      group.classList.toggle("ifta-invalid", isInvalid || !isValid);
+
+    }, siteCommonGV.ZeroAnimationTimeout);
+  }
+
+  addManagedEventListener(input, 'focus', handleFocusCallback);
+  addManagedEventListener(input, 'blur', handleCheckValidityCallback);
+  addManagedEventListener(input, 'input', handleCheckValidityCallback);
+
+  if (input.value.trim() !== "" && !isSelect) {
+    handleCheckValidityCallback(input);
+  }
+
+}
+
+function getRandomInt(min, max) {
+
+  min = Math.ceil(min);
+  max = Math.floor(max);
+
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 
 }
