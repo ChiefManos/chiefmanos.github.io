@@ -172,44 +172,6 @@ function handleQuickLanguageButton(quickLanguageButton) {
   });
 }
 
-function handleIncreaseNumber(numberInput) {
-
-  if (numberInput.value === "") {
-    numberInput.value = parseInt(numberInput.getAttribute("data-min") ?? "0") + 1;
-    return;
-  }
-
-  const currentNumber = parseInt(numberInput.value);
-  numberInput.value = isNaN(currentNumber) ? 1 : Math.ceil(currentNumber + 0.01);
-
-  const inputMode = numberInput.getAttribute("inputmode");
-  if (inputMode === "decimal") {
-    numberInput.value = Number(numberInput.value).toFixed(2);
-  }
-
-  blurThenFocus(numberInput);
-
-}
-
-function handleDecreaseNumber(numberInput) {
-
-  if (numberInput.value === "") {
-    numberInput.value = numberInput.getAttribute("data-min") ?? 0;
-    return;
-  }
-
-  const currentNumber = parseInt(numberInput.value);
-  numberInput.value = currentNumber > 0 ? Math.floor(currentNumber - 0.01) : 0;
-
-  const inputMode = numberInput.getAttribute("inputmode");
-  if (inputMode === "decimal") {
-    numberInput.value = Number(numberInput.value).toFixed(2);
-  }
-
-  blurThenFocus(numberInput);
-
-}
-
 function infoCardActivate(int) {
 
   stringConstruct = "info-card-";
@@ -238,10 +200,4 @@ function infoCardDeactivate(int) {
 
 function clearForm(form) {
   form.reset();
-}
-
-function cClearTimeout(element) {
-  if (element.customTimeout) {
-    clearTimeout(element.customTimeout);
-  }
 }
