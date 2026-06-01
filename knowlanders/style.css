@@ -762,6 +762,7 @@ main .section-landing .hero-text.text-right {
     right: 110px;
     top: 145px;
     color: var(--color-w1)!important;
+    text-shadow: 0 0 15px var(--color-be1);
 }
 
 main .section-landing .hero-text span {
@@ -2351,6 +2352,7 @@ body .fullscreen-window .fullscreen-close:hover {
 
     main .section-landing .hero-text.text-left {
         color: var(--color-w1);
+        text-shadow: 0 0 15px var(--color-be1);
     }
 
     main .section-landing .hero-text.text-left span img {
