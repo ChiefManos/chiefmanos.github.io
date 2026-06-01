@@ -745,6 +745,10 @@ main .section-landing .logo {
     left: 28px;
 }
 
+main .section-landing .hero-text {
+    z-index: 1;
+}
+
 main .section-landing .hero-image {
     width: 100%;
 }
