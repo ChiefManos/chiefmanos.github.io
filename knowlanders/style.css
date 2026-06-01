@@ -623,7 +623,7 @@ header:not(.header-common) .decoration-item.pearl {
     top: 0;
     left: 0;
     border-radius: 720px;
-    animation: pearl-animation 20s linear infinite;
+    /* animation: pearl-animation 20s linear infinite; */
 }
 
 @supports (backdrop-filter: blur()) or (-webkit-backdrop-filter: blur()) {
