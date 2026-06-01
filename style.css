@@ -3,6 +3,7 @@
     --color-b2: #242424;
     --color-w1: #e8e8e8;
     --color-w2: #4a4949;
+    --color-g1: #CCDBDC;
     --color-p1: #2D2749;
     --color-p2: #6B5963;
     --color-p2-hovered: #9A7E8E;
@@ -13,6 +14,8 @@
     --color-be2: #458ff6;
     --color-be3: #f2f7ff;
     --color-be4: #2a5a9e;
+    --color-be5: #003249;
+    --color-be6: #9AD1D4;
     --color-gr1: #8AC2B8;
     --color-gr2: #46615c;
     --color-r1: #7D3939;
@@ -100,6 +103,11 @@ main[data-current-project-id=tra] .slider-items .item.c-hover-mirrored {
     outline: 4px solid var(--color-be2);
 }
 
+main[data-current-project-id=kno] .slider-items .item:hover,
+main[data-current-project-id=kno] .slider-items .item.c-hover-mirrored {
+    outline: 4px solid var(--color-be6);
+}
+
 .slider-arrows .slider-arrow {
     position: absolute;
     display: flex;
@@ -168,6 +176,15 @@ main[data-current-project-id=tra] .slider-arrows .slider-arrow:hover {
     background-color: var(--color-be2);
 }
 
+main[data-current-project-id=kno] .slider-arrows .slider-arrow {
+    background-color: var(--color-g1);
+    border-color: var(--color-be5);
+}
+
+main[data-current-project-id=kno] .slider-arrows .slider-arrow:hover {
+    background-color: var(--color-be5);
+}
+
 .slider-arrows .slider-arrow:active {
     scale: 0.85;
 }
@@ -221,6 +238,14 @@ main[data-current-project-id=tra] .slider-arrows .slider-arrow::after {
 
 main[data-current-project-id=tra] .slider-arrows .slider-arrow:hover::after {
     background-color: var(--color-be3);
+}
+
+main[data-current-project-id=kno] .slider-arrows .slider-arrow::after {
+    background-color: var(--color-be5);
+}
+
+main[data-current-project-id=kno] .slider-arrows .slider-arrow:hover::after {
+    background-color: var(--color-g1);
 }
 
 .slider-arrows .arrow-left {
@@ -298,6 +323,13 @@ main[data-current-project-id=tra] .slider-items-title.c-hover-mirrored,
     color: var(--color-be4);
 }
 
+main[data-current-project-id=kno] .slider-items-title:hover,
+main[data-current-project-id=kno] .slider-items-title.c-hover-mirrored,
+.next-slider-item-ghost[data-ghost-project-id=kno]:hover ~ .ghost-item-title,
+.next-slider-item-ghost[data-ghost-project-id=kno] ~ .ghost-item-title:hover {
+    color: var(--color-be5);
+}
+
 .slider-decoration {
     position: absolute;
     bottom: 21px;
@@ -330,6 +362,10 @@ main[data-current-project-id=mus] .slider-decoration svg path.c-animate {
 
 main[data-current-project-id=tra] .slider-decoration svg path.c-animate {
     fill: var(--color-be4);
+}
+
+main[data-current-project-id=kno] .slider-decoration svg path.c-animate {
+    fill: var(--color-be6);
 }
 
 .next-slider-item-ghost-wrapper {
