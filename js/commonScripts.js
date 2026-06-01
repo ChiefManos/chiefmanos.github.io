@@ -1,4 +1,8 @@
+window.siteCommonGV = window.siteCommonGV || {};
+
 $(document).ready(function () {
+
+    siteCommonGV.ZeroAnimationTimeout = 0;
 
     if (!document.body.classList.contains("portfolio")) {
         return;
